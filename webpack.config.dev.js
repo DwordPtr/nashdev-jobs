@@ -10,7 +10,7 @@ export default {
     extensions: [".js", ".jsx"]
     // extensions: ["*", ".js", ".jsx", ".json"]
   },
-  devtool: "cheap-module-source-map",
+  devtool: "cheap-module-eval-source-map",
   entry: [
     // must be first entry to properly set public path
     "./client/webpack-public-path",

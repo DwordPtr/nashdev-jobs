@@ -56,7 +56,7 @@ class CompanyList extends Component {
     const companyById = this.props.companyById;
 
     const companies = sortByKeys(
-      groupBy(this.props.companies.map(id => companyById[id]), c =>
+      groupBy(this.props.companies.map(c => companyById[c.id]), c =>
         c.name.charAt(0).toUpperCase()
       )
     );

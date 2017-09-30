@@ -19,6 +19,23 @@
     winston "^2.1.1"
     ws "^1.0.1"
 
+"@types/bluebird@*":
+  version "3.5.12"
+  resolved "https://registry.yarnpkg.com/@types/bluebird/-/bluebird-3.5.12.tgz#180881847ff664e9e294a5dcdcd4c8e9a150e5a7"
+
+"@types/bookshelf@^0.9.6":
+  version "0.9.6"
+  resolved "https://registry.yarnpkg.com/@types/bookshelf/-/bookshelf-0.9.6.tgz#0305fba1759cb9a4bbc3963cffb169224ae0d3ea"
+  dependencies:
+    "@types/bluebird" "*"
+    "@types/create-error" "*"
+    "@types/knex" "*"
+    "@types/lodash" "*"
+
+"@types/create-error@*":
+  version "0.3.30"
+  resolved "https://registry.yarnpkg.com/@types/create-error/-/create-error-0.3.30.tgz#dc692a2b0a5d70d85dbf01fef2f6d41232255df3"
+
 "@types/express-serve-static-core@*":
   version "4.0.53"
   resolved "https://registry.yarnpkg.com/@types/express-serve-static-core/-/express-serve-static-core-4.0.53.tgz#1723a35d1447f2c55e13c8721eab3448e42f4d82"
@@ -31,6 +48,17 @@
   dependencies:
     "@types/express-serve-static-core" "*"
     "@types/serve-static" "*"
+
+"@types/knex@*":
+  version "0.0.61"
+  resolved "https://registry.yarnpkg.com/@types/knex/-/knex-0.0.61.tgz#3825ec6fe0886237dbce02d1398ae8dfdc19f4b3"
+  dependencies:
+    "@types/bluebird" "*"
+    "@types/node" "*"
+
+"@types/lodash@*":
+  version "4.14.76"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.76.tgz#87874f766774d54e89589697340be9496fb8bf70"
 
 "@types/mime@*":
   version "2.0.0"
@@ -3594,7 +3622,11 @@ indexof@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/indexof/-/indexof-0.0.1.tgz#82dc336d232b9062179d05ab3293a66059fd435d"
 
-inflection@^1.5.1:
+inflected@^1.1.6:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/inflected/-/inflected-1.1.7.tgz#c393df6e28472d0d77b3082ec3aa2091f4bc96f9"
+
+inflection@1.12.0, inflection@^1.5.1:
   version "1.12.0"
   resolved "https://registry.yarnpkg.com/inflection/-/inflection-1.12.0.tgz#a200935656d6f5f6bc4dc7502e1aecb703228416"
 
@@ -4284,6 +4316,28 @@ json5@^0.5.0, json5@^0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/json5/-/json5-0.5.1.tgz#1eade7acc012034ad84e2396767ead9fa5495821"
 
+jsonapi-mapper@^1.0.0-beta.14:
+  version "1.0.0-beta.14"
+  resolved "https://registry.yarnpkg.com/jsonapi-mapper/-/jsonapi-mapper-1.0.0-beta.14.tgz#87babecaabe6e0953c8419ee5a5a23e0f58fe7e6"
+  dependencies:
+    "@types/bookshelf" "^0.9.6"
+    inflection "1.12.0"
+    jsonapi-serializer "^3.3.0"
+    lodash "^4.17.4"
+    qs "^6.3.1"
+    type-check "^0.3.2"
+
+jsonapi-normalizer@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/jsonapi-normalizer/-/jsonapi-normalizer-1.2.0.tgz#dee99d007fec0331de6b6dafaf08431806f337d5"
+
+jsonapi-serializer@^3.3.0:
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/jsonapi-serializer/-/jsonapi-serializer-3.5.5.tgz#bc345bbd6e94f01a90f5b2d4942afbb637212222"
+  dependencies:
+    inflected "^1.1.6"
+    lodash "^4.16.3"
+
 jsonfile@^2.1.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/jsonfile/-/jsonfile-2.4.0.tgz#3736a2b428b87bbda0cc83b53fa3d633a35c2ae8"
@@ -4635,7 +4689,7 @@ lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
 
-"lodash@>=3.5 <5", lodash@^4.0.0, lodash@^4.11.1, lodash@^4.13.1, lodash@^4.14.0, lodash@^4.15.0, lodash@^4.16.0, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0, lodash@^4.6.0, lodash@^4.6.1, lodash@~4.17.4:
+"lodash@>=3.5 <5", lodash@^4.0.0, lodash@^4.11.1, lodash@^4.13.1, lodash@^4.14.0, lodash@^4.15.0, lodash@^4.16.0, lodash@^4.16.3, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0, lodash@^4.6.0, lodash@^4.6.1, lodash@~4.17.4:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
@@ -6017,7 +6071,7 @@ qs@6.5.0:
   version "6.5.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.0.tgz#8d04954d364def3efc55b5a0793e1e2c8b1e6e49"
 
-qs@6.5.1, qs@~6.5.1:
+qs@6.5.1, qs@^6.3.1, qs@~6.5.1:
   version "6.5.1"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.1.tgz#349cdf6eef89ec45c12d7d5eb3fc0c870343a6d8"
 
@@ -7326,7 +7380,7 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"
   resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
 
-type-check@~0.3.2:
+type-check@^0.3.2, type-check@~0.3.2:
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/type-check/-/type-check-0.3.2.tgz#5884cab512cf1d355e3fb784f30804b2b520db72"
   dependencies:

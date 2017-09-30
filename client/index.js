@@ -11,8 +11,6 @@ import history from "client/common/history";
 import App from "client/common/components/app";
 
 history.listen(location => {
-  console.log("location", location);
-
   if (typeof window.ga === "function") {
     window.ga("set", "page", location.pathname + location.search);
     window.ga("send", "pageview");
